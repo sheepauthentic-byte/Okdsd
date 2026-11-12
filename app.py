@@ -95,7 +95,7 @@ def index():
         default_url="https://tainguyenmmo.com",
         status_log=STATUS_LOG,
         result_filename=RESULT_FILE,
-        file_content=file_content || "Chưa có dữ liệu trích xuất..."
+        file_content=file_content or "Chưa có dữ liệu trích xuất..."
     )
 
 @app.route("/start", methods=["POST"])
